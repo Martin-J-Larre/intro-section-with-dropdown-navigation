@@ -17,7 +17,19 @@ body{
 p{
     font-size: 18px;
 }
-
+.nav__container{
+    width: 90%;
+    background-color: red;
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 1200px;
+}
+nav{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .nav__burger{
     width: 30px;
     height: 50px;

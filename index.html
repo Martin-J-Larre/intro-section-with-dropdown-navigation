@@ -9,8 +9,8 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav class="nav__container">
+    <header class="nav__container">
+        <nav>
             <img src="./images/logo.svg" alt="Logo">
             <div class="nav__burger"></div>
             <div class="nav__overlay">
@@ -21,6 +21,7 @@
                         <div class="nav__item--icon-container">
                             <img src="./images/icon-arrow-down.svg" alt="Arrow down">
                         </div>
+                        
                         <ul class="nav__menu nav__menu--dropdown">
 
                             <li class="nav__item nav__item--children">
@@ -50,7 +51,7 @@
                                     Planning
                                 </a>
                             </li>
-                            
+
                         </ul>
                     </li>
                     <li class="nav__item nav__item--parent">
@@ -58,14 +59,20 @@
                         <div class="nav__item--icon-container">
                             <img src="./images/icon-arrow-down.svg" alt="Arrow down">
                         </div>
+
                         <ul class="nav__menu nav__menu--dropdown">
-                            <li class="nav__item nav__item--children"> <a>History</a></li>
-                            <li class="nav__item nav__item--children"> <a>Our Team</a></li>
-                            <li class="nav__item nav__item--children"> <a>Blog</a></li>
+                            <li class="nav__item nav__item--children"> <a href="#">History</a></li>
+                            <li class="nav__item nav__item--children"> <a href="#">Our Team</a></li>
+                            <li class="nav__item nav__item--children"> <a href="#">Blog</a></li>
                         </ul>
+
                     </li>
-                    <li class="nav__item"> Careers</li>
-                    <li class="nav__item">About</li>
+                    <li class="nav__item"><a href="#">Careers</a></li>
+                    <li class="nav__item"><a href="#">About</a></li>
+                </ul>
+                <ul class="nav__user">
+                    <li class="nav__user--login"><a href="#">Login</a></li>
+                    <li class="nav__user--register"><a href="#">Register</a></li>
                 </ul>
             </div>
         </nav>
@@ -75,8 +82,8 @@
  
   
 
-  Login
-  Register
+  
+  
 
   Make remote work
 
