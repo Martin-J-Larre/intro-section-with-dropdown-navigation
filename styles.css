@@ -3,6 +3,8 @@
 *{
     margin: 0;
     box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
 }
 :root{
     --lmost-white: hsl(0, 0%, 98%);
@@ -37,4 +39,65 @@ nav{
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
+    z-index: 100;
+    transition: background-image .3s;
+}
+.nav__burger--open{
+    background-image: url('./images/icon-close-menu.svg') ;
+}
+.nav__overlay{
+    background-color: #000000a7;
+    position: fixed;
+    inset: 0;
+}
+.nav__menu{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #fff;
+    width: 65%;
+    max-width: 400px;
+    overflow: auto;
+    padding: 70px 0;
+}
+.nav__item{
+    width: 80%;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.nav__item img{
+    margin-right: 10px;
+}
+.nav__item a{
+    color: var(--almost-black);
+}
+.nav__menu--dropdown{
+    padding: 10px 0;
+    overflow: hidden;
+    height: 0;
+    transition: height .4s;
+}
+.dropdown{
+    height: 100%;
+}
+.nav__menu--dropdown > li,
+.nav__item--last {
+    padding: 10px 0;
+}
+[login]{
+    margin-top: 25px;
+}
+.nav__item--user{
+    text-align: center;
+    padding: 15px;
+}
+/* .nav__item--user:hover{
+    border: 1px solid var(--almost-black);
+    border-radius: 15px;
+} */
+[register]{
+    border: 1px solid var(--almost-black);
+    border-radius: 15px;
 }

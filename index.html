@@ -6,7 +6,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
     <header class="nav__container">
@@ -16,36 +16,36 @@
             <div class="nav__overlay">
                 <ul class="nav__menu">
 
-                    <li class="nav__item nav__item--parent">
+                    <li class="nav__item">
                         Features 
-                        <div class="nav__item--icon-container">
+                        <span class="nav__item--icon-container">
                             <img src="./images/icon-arrow-down.svg" alt="Arrow down">
-                        </div>
+                        </span>
                         
-                        <ul class="nav__menu nav__menu--dropdown">
+                        <ul class="nav__menu--dropdown">
 
-                            <li class="nav__item nav__item--children">
+                            <li class="nav__item">
                                 <a href="#">
                                     <img src="./images/icon-todo.svg" alt="">
                                     Todo list
                                 </a>
                             </li>
 
-                            <li class="nav__item nav__item--children">
+                            <li class="nav__item">
                                 <a href="#">
                                     <img src="./images/icon-calendar.svg" alt="">
                                     Calendar
                                 </a>
                             </li>
 
-                            <li class="nav__item nav__item--children">
+                            <li class="nav__item">
                                 <a href="#">
                                     <img src="./images/icon-reminders.svg" alt="">
                                     Reminders
                                 </a>
                             </li>
 
-                            <li class="nav__item nav__item--children">
+                            <li class="nav__item">
                                 <a href="#">
                                     <img src="./images/icon-planning.svg" alt="">
                                     Planning
@@ -54,36 +54,27 @@
 
                         </ul>
                     </li>
-                    <li class="nav__item nav__item--parent">
+                    <li class="nav__item">
                         Company
-                        <div class="nav__item--icon-container">
+                        <span class="nav__item--icon-container">
                             <img src="./images/icon-arrow-down.svg" alt="Arrow down">
-                        </div>
+                        </span>
 
-                        <ul class="nav__menu nav__menu--dropdown">
-                            <li class="nav__item nav__item--children"> <a href="#">History</a></li>
-                            <li class="nav__item nav__item--children"> <a href="#">Our Team</a></li>
-                            <li class="nav__item nav__item--children"> <a href="#">Blog</a></li>
+                        <ul class="nav__menu--dropdown">
+                            <li class="nav__item"> <a href="#">History</a></li>
+                            <li class="nav__item"> <a href="#">Our Team</a></li>
+                            <li class="nav__item"> <a href="#">Blog</a></li>
                         </ul>
 
                     </li>
-                    <li class="nav__item"><a href="#">Careers</a></li>
-                    <li class="nav__item"><a href="#">About</a></li>
-                </ul>
-                <ul class="nav__user">
-                    <li class="nav__user--login"><a href="#">Login</a></li>
-                    <li class="nav__user--register"><a href="#">Register</a></li>
+                    <li class="nav__item nav__item--last"><a href="#">Careers</a></li>
+                    <li class="nav__item nav__item--last"><a href="#">About</a></li>
+                    <li class="nav__item nav__item--user" login ><a href="#">Login</a></li>
+                    <li class="nav__item nav__item--user" register><a href="#">Register</a></li>
                 </ul>
             </div>
         </nav>
     </header>
-  
-  
- 
-  
-
-  
-  
 
   Make remote work
 
@@ -96,5 +87,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="./script.js"></script>
 </body>
 </html>
