@@ -9,72 +9,89 @@
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <header class="nav__container">
-        <nav>
-            <img src="./images/logo.svg" alt="Logo">
-            <div class="nav__burger"></div>
+
+        <nav class="nav nav__container">
+            <img src="./images/logo.svg" alt="Logo" class="nav__img">
+
+            <div class="nav__hamburger"></div>
+
             <div class="nav__overlay">
+
                 <ul class="nav__menu">
 
                     <li class="nav__item">
-                        Features 
-                        <span class="nav__item--icon-container">
-                            <img src="./images/icon-arrow-down.svg" alt="Arrow down">
+                        <span class="nav__item--parent">
+                            Features 
+                            <img src="./images/icon-arrow-down.svg" alt="Arrow down" class="nav__item--arrow">
                         </span>
                         
                         <ul class="nav__menu--dropdown">
-
-                            <li class="nav__item">
-                                <a href="#">
-                                    <img src="./images/icon-todo.svg" alt="">
+                            <li class="nav__item--children">
+                                <a href="#" class="nav__link">
+                                    <img src="./images/icon-todo.svg" alt="Todo List" class="nav__item--icon">
                                     Todo list
                                 </a>
                             </li>
 
-                            <li class="nav__item">
-                                <a href="#">
-                                    <img src="./images/icon-calendar.svg" alt="">
+                            <li class="nav__item--children">
+                                <a href="#" class="nav__link">
+                                    <img src="./images/icon-calendar.svg" alt="Todo List" class="nav__item--icon">
                                     Calendar
                                 </a>
                             </li>
 
-                            <li class="nav__item">
-                                <a href="#">
-                                    <img src="./images/icon-reminders.svg" alt="">
+                            <li class="nav__item--children">
+                                <a href="#" class="nav__link">
+                                    <img src="./images/icon-reminders.svg" alt="Todo List" class="nav__item--icon">
                                     Reminders
                                 </a>
                             </li>
 
-                            <li class="nav__item">
-                                <a href="#">
-                                    <img src="./images/icon-planning.svg" alt="">
+                            <li class="nav__item--children">
+                                <a href="#" class="nav__link">
+                                    <img src="./images/icon-planning.svg" alt="Todo List" class="nav__item--icon">
                                     Planning
                                 </a>
                             </li>
 
                         </ul>
                     </li>
+
                     <li class="nav__item">
-                        Company
-                        <span class="nav__item--icon-container">
-                            <img src="./images/icon-arrow-down.svg" alt="Arrow down">
+                        <span class="nav__item--parent">
+                            Company
+                            <img src="./images/icon-arrow-down.svg" alt="Arrow down" class="nav__item--arrow">
                         </span>
 
-                        <ul class="nav__menu--dropdown">
-                            <li class="nav__item"> <a href="#">History</a></li>
-                            <li class="nav__item"> <a href="#">Our Team</a></li>
-                            <li class="nav__item"> <a href="#">Blog</a></li>
+                        <ul class="nav__menu--dropdown" >
+                            <li class="nav__item--children">
+                                <a href="#" class="nav__link">History</a>
+                            </li>
+                            <li class="nav__item--children"> 
+                                <a href="#" class="nav__link">Our Team</a>
+                            </li>
+                            <li class="nav__item--children"> 
+                                <a href="#" class="nav__link">Blog</a>
+                            </li>
                         </ul>
 
                     </li>
-                    <li class="nav__item nav__item--last"><a href="#">Careers</a></li>
-                    <li class="nav__item nav__item--last"><a href="#">About</a></li>
-                    <li class="nav__item nav__item--user" login ><a href="#">Login</a></li>
-                    <li class="nav__item nav__item--user" register><a href="#">Register</a></li>
+
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Careers</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__user">
+                        <a href="#" class="nav__link--user">Login</a>
+                    </li>
+                    <li class="nav__user nav__user--border">
+                        <a href="#" class="nav__link--user">Register</a>
+                    </li>
                 </ul>
             </div>
         </nav>
-    </header>
 
   Make remote work
 

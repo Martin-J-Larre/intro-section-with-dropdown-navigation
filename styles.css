@@ -21,7 +21,6 @@ p{
 }
 .nav__container{
     width: 90%;
-    background-color: red;
     margin: 0 auto;
     overflow: hidden;
     max-width: 1200px;
@@ -32,7 +31,7 @@ nav{
     align-items: center;
     justify-content: space-between;
 }
-.nav__burger{
+.nav__hamburger{
     width: 30px;
     height: 50px;
     background-image: url("./images/icon-menu.svg");
@@ -42,7 +41,7 @@ nav{
     z-index: 100;
     transition: background-image .3s;
 }
-.nav__burger--open{
+.nav__hamburger--open{
     background-image: url('./images/icon-close-menu.svg') ;
 }
 .nav__overlay{
@@ -58,46 +57,55 @@ nav{
     background-color: #fff;
     width: 65%;
     max-width: 400px;
+    padding: 0;
     overflow: auto;
     padding: 70px 0;
 }
 .nav__item{
     width: 80%;
     margin: 0 auto;
-    cursor: pointer;
-}
-
-.nav__item img{
-    margin-right: 10px;
-}
-.nav__item a{
     color: var(--almost-black);
+    cursor: pointer;
+    padding: 20px 0;
+    border: 1px solid red;
+}
+.nav__item:has(.nav__item--parent){
+    padding: 0;
 }
 .nav__menu--dropdown{
-    padding: 10px 0;
+    padding: 0;
+    width: 80%;
+    background-color: orange;
+    margin: 0 auto;
+    display: grid;
+    gap: 15px;
     overflow: hidden;
     height: 0;
     transition: height .4s;
 }
-.dropdown{
-    height: 100%;
+.nav__item--parent{
+    display: grid;
+    align-items: center;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 15px;
+    padding: 20px 0;
 }
-.nav__menu--dropdown > li,
-.nav__item--last {
+.nav__link{
+    color: var(--almost-black);
+}
+.nav__user{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+.nav__link--user{
+    display: inline-block;
+    color: var(--medium-gray);
     padding: 10px 0;
 }
-[login]{
-    margin-top: 25px;
-}
-.nav__item--user{
-    text-align: center;
-    padding: 15px;
-}
-/* .nav__item--user:hover{
-    border: 1px solid var(--almost-black);
+.nav__user--border{
+    border: 1px solid var(--medium-gray);
     border-radius: 15px;
-} */
-[register]{
-    border: 1px solid var(--almost-black);
-    border-radius: 15px;
+    margin-top: 15px;
 }

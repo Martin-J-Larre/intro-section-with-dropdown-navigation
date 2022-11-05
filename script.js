@@ -1,5 +1,5 @@
-const burger = document.querySelector('.nav__burger');
-const dropdown = document.querySelector('.nav__menu--dropdown');
+const hamburger = document.querySelector('.nav__hamburger');
 
-burger.addEventListener('click',() => burger.classList.toggle('nav__burger--open'));
-dropdown.addEventListener('click',() => dropdown.classList.toggle('dropdown'));
+
+hamburger.addEventListener('click',() => hamburger.classList.toggle('nav__hamburger--open'));
+
