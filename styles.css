@@ -48,6 +48,13 @@ nav{
     background-color: #000000a7;
     position: fixed;
     inset: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: .3s opacity;
+}
+.nav__overlay--open{
+    opacity: 1;
+    pointer-events: unset;
 }
 .nav__menu{
     position: absolute;
