@@ -116,3 +116,51 @@ nav{
     border-radius: 15px;
     margin-top: 15px;
 }
+.main__grid{
+    overflow: hidden;
+    display: grid;
+    grid-template-areas:
+    "img img img"
+    ".   text . "
+    ;
+}
+.main__article{
+    padding: 50px 0;
+    text-align: center;
+    grid-area:  text;
+}
+.main__title{
+    font-size: 30px;
+}
+.main__img{
+width: 100%;
+}
+.main__p{
+    line-height: 1.5;
+    margin: 20px 0;
+}
+.main__btn{
+    background-color: var(--almost-black);
+    color: #fff;
+    display: inline-block;
+    padding: 15px 25px;
+    border-radius: 15px;
+    font-weight: 700;
+}
+.main__picture{
+    grid-area: img;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.main__images-botom{
+    display: grid;
+    gap: 1.5rem;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(30px, 100px);
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 20px 80px;
+}
+.main__images-botom > img{
+    width: 100%;
+}

@@ -26,3 +26,13 @@ navOverlay.addEventListener('click', (e) => {
 const subMenu = (element, nameClass) => { 
     return element.classList.value.includes(nameClass);
 }
+
+window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) {
+        const navMenuDropdown = document.querySelectorAll('.nav__menu--dropdown');
+
+        navMenuDropdown.forEach(element => {
+            element.style.height = '';
+        })
+    }
+})
